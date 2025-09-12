@@ -2,7 +2,7 @@
 .email, .instagram {
 	color: #56FF95;
 	margin: 0 8px;
-	text-decoration: none; /* remove sublinhado */
+	text-decoration: none;
 }
 
 /* Botão único */
