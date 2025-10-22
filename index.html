@@ -28,14 +28,9 @@
 				</a>
 			</div>
 
-			<!-- Botão: Entre em contato -->
-			<div class="mb-3">
-				<p><a class="btn btn-primary w-100" href="mailto:estufa.app.br@gmail.com">Entre em contato</a></p>
-			</div>
-
-			<!-- Botão: Conectar ao Wi-Fi -->
+			<!-- Botão único -->
 			<div class="mb-5">
-				<p><button id="connectWifi" class="btn btn-success w-100">Conectar ao Wi-Fi</button></p>
+				<p><a class="btn btn-primary w-100" href="mailto:estufa.app.br@gmail.com">Entre em contato</a></p>
 			</div>
 
 			<!-- Footer -->
@@ -58,22 +53,6 @@
 			</footer>
 			
 		</div>
-
-		<script>
-		const payload = 'WIFI:T:WPA;S:Estufa Inteligente;P:ifprivaipora;;';
-		const qrUrl = 'https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=' + encodeURIComponent(payload);
-
-		document.getElementById('connectWifi').addEventListener('click', () => {
-			// tenta abrir o esquema Wi-Fi
-			window.location.href = payload;
-
-			// fallback: abre QR se o esquema não for suportado
-			setTimeout(() => {
-				window.open(qrUrl, '_blank');
-			}, 600);
-		});
-		</script>
-
 		<script src="assets/js/script.js"></script>
 	</body>
 </html>
